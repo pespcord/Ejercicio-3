@@ -3,20 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>ejercicio 3 - banderas</title>
 	<link rel="stylesheet" href="">
 	<style type="text/css">
+
 		body {
 			text-align: center;
 		} 
 		.contenedor {
 			width: 500px;
 			height: 200px;
-			background-color: #eaeaea;
+			/*background-color: #eaeaea;*/
 			margin: 1%;
 			display: inline-block;
 			position: relative;
-
 		}
 		p {
 			text-align: left;
@@ -28,17 +28,16 @@
 			top: 10px;
 			display: inline-block;
 			left: 26%;
-			border: 1px solid #333;
+			border: 1px solid #808080;
 		}
 		.contenedor .bandera .rojo {
 			background-color: red;
-			height: 33%;
+			height: 33.3%;
 
 		}
 		.contenedor .bandera .amarillo {
 			background-color: yellow;
-			height: 33%;
-
+			height: 33.3%;
 		}
 		.rojo.din {
 			width: 70px;
@@ -47,7 +46,6 @@
 		    box-sizing: border-box;
 		    float:left;
 		}
-
 		.blanco.din {
 			width: 20px;
 		    height: 62px;
@@ -83,19 +81,43 @@
 			background-color: white;
 			height: 100%;
 		}
-		.circulo.rojo {
-		     width: 60px;
-		     height: 60px!important;
-		     -moz-border-radius: 50%;
-		     -webkit-border-radius: 50%;
-		     border-radius: 50%;
-		     background: red;
-		     position: absolute;
+		.circulorojo {
+		    background-color:red;
+		    width:60px;
+		    height:60px;
+		    -webkit-border-radius: 80%;
+		    position: absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin: auto;
 		}
+		.bandera.japon {
+			position: relative;
+		}
+		.rojoemir {
+			background-color: red;
+			width: 20%;
+			height: 100%;
+			position: absolute;
+		}
+		.verde{
+			background-color: #007f25;
+			height: 33.3%;
+		}
+		.blancoemir{
+			background-color: #fff;
+			height: 33.3%;
+		}
+		.negro{
+			background-color: #000;
+			height: 33.3%;
+		}
+
 	</style>
 </head>
-<body>
-	
+<body>	
 	<div class="contenedor">
 		<div class="bandera">
 			<div class="rojo"></div>
@@ -119,20 +141,20 @@
 	</div>
 	<div class="contenedor">
 		<div class="bandera">
-			<div class="rojo"></div>
-			<div class="amarillo"></div>
-			<div class="rojo"></div>
+			<div class="rojoemir"></div>
+			<div class="verde"></div>
+			<div class="blancoemir"></div>
+			<div class="negro"></div>
 			<p>Emiratos Árabes</p>	
 		</div>
 	</div>
 	<div class="contenedor">
 		<div class="bandera">
-			<div class="circulo rojo"></div>
-			<div class="blanco jp"></div>
+			<div class="blanco jp">
+				<div class="circulorojo"></div>
+			</div>
 			<p>Japón</p>	
 		</div>		
 	</div>
-
-
 </body>
 </html>
